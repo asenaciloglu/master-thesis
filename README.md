@@ -10,14 +10,14 @@ Recommendation systems are valuable in marketing research as they provide inform
 ----------------------------------------
 The data source used in this thesis is not to be shared due to privacy concerns. Below, we explain how one can utilize the code provided and what types of data would be necessary to proceed.
 
-Data_Import_and_Cleaning.ipynb : 
+- Data_Import_and_Cleaning.ipynb : 
 Requires two data sources: 
-*Transactions data containing user id, product id, basket id, price and day of purchase.
-*Product attributes data containing product id, product description, category description. 
+  * Transactions data containing user id, product id, basket id, price and day of purchase.
+  * Product attributes data containing product id, product description, category description. 
 It outputs data_cleaned.pkl for filtered and cleaned transactions and word_vectors_saved.pkl from weights trained on word2vec.
-Negative_Sampling_and_Feature_Engineering.ipynb: This notebooks uses data_cleaned.pkl from the previous notebook to preprocess the data further for modeling and product attributes data. It outputs data_processed.pkl.
-Modeling_MF_Shopper_WDL_LSTM.ipynb: Requests data_processed.pkl, product attributes data and word_vectors_saved.pkl.
-Modeling_CNN_elasticity.ipynb: Requests data_processed.pkl, product attributes data and word_vectors_saved.pkl
+- Negative_Sampling_and_Feature_Engineering.ipynb: This notebooks uses data_cleaned.pkl from the previous notebook to preprocess the data further for modeling and product attributes data. It outputs data_processed.pkl.
+- Modeling_MF_Shopper_WDL_LSTM.ipynb: Requests data_processed.pkl, product attributes data and word_vectors_saved.pkl.
+- Modeling_CNN_elasticity.ipynb: Requests data_processed.pkl, product attributes data and word_vectors_saved.pkl
 
 Please note the notebooks are adjusted to read data from Google Drive and to run on Google Colab. To use the notebooks locally, the directories must be adapted accordingly.
 
